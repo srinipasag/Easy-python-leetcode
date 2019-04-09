@@ -1,0 +1,14 @@
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        print(nums1, nums2)
+        if not nums1 or not nums2:
+            return []
+        d = {}
+        res = []
+        for i in nums1:
+            d[i] = i
+        for i in nums2:
+            if i in d and not i in res:
+                res.append(i)
+        print("res is", res)
+        return res 
