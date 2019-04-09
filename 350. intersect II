@@ -1,0 +1,36 @@
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        print (nums1, nums2)
+        d = {}
+        res = []
+        if not nums1 or not nums2:
+            return res
+        for num in nums1:
+            if d.get(num):
+                d[num] = d.get(num)+1
+            else:
+                d[num] = 1
+        
+        print(d)
+        
+        for num in nums2:
+            if num in d:
+                if d[num] >= 1:
+                    d[num] -= 1
+                    if d[num] == 0:
+                        del d[num]
+                res.append(num)
+        return res
+        
+        
+        Your input
+[4,9,5]
+[9,4,9,8,4]
+stdout
+[4, 9, 5] [9, 4, 9, 8, 4]
+{4: 1, 9: 1, 5: 1}
+Output
+[9,4]
+Diff
+Expected
+[4,9]
