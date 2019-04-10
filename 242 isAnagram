@@ -1,0 +1,22 @@
+lass Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        d = {}
+        if len(s) != len(t):
+            return False
+        
+        for i in s:
+            #print (d.get(i))
+            if d.get(i):
+                d[i] = d.get(i) +1
+            else:
+                d[i] = 1
+        
+        for i in t:
+            if i in d:
+                d[i] -= 1
+                #print (d[i])
+                if d[i] == 0:
+                    del d[i]
+        if len(d) > 0:
+            return False
+        return True
