@@ -1,0 +1,15 @@
+class Solution:
+    def shortestCompletingWord(self, licensePlate: str, words: List[str]) -> str:
+        lic = list(c.lower() for c in licensePlate if c.isalpha())
+        print(lic)
+        
+        for word in sorted(words,key=len):
+            tmp = lic.copy()
+            for c in word:
+                #print("word is",word)
+                if c.lower() in tmp:
+                    tmp.remove(c.lower())
+            #print("tmp",tmp)
+            if not tmp:
+                return word
+                    
