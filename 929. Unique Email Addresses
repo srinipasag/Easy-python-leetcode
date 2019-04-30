@@ -1,0 +1,24 @@
+class Solution:
+    def numUniqueEmails(self, emails: List[str]) -> int:
+        print(emails)
+        d = {}
+        for s in emails:
+            for i in range(len(s)):
+                #print(s[i])
+                if s[i] == '@':
+                    break
+            local_name = s[0:i]
+            domain_name = s[i+1::]
+            local = ''
+            #print (local_name, domain_name)
+            for index,l in enumerate(local_name):
+                if l != '.':
+                    #print(local_name[index], index,l
+                    if (l == '+'):
+                        break
+                    local += l
+            
+            #print (local)
+            d[local+'@'+domain_name] = 1
+            #print (len(d.keys()))
+        return len(d.keys())
