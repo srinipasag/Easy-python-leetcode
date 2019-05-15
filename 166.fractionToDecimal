@@ -1,0 +1,43 @@
+class Solution:
+    def fractionToDecimal(self, numerator: int, denominator: int) -> str:
+        
+        result = []
+        seen = {}
+        # if remiander is zero
+        if (numerator % denominator == 0):
+            return str(numerator//denominator)
+        
+        #if any is negative
+        if numerator / denominator < 0:
+            result.append("-")
+
+        #make it positive
+        num = abs(numerator)
+        den = abs(denominator)
+        
+        #first get the remainder upto "."
+        result.append (str(num//den))
+        result.append(".")
+        print ("1:", result)
+
+        # Quotioent 
+        num %= den
+        
+        while( num != 0):
+            if num in seen.keys():
+                #result.insert(seen[num],"(")
+                print (result)
+                result.insert(seen[num], "(")
+                result.append(")")
+                break
+            else:
+                #jsut add the length: becz add ( after the length
+                seen[num] = len(result)
+                print("result 2:", len(result))
+                num *= 10
+                q   = num // den
+                result.append(str(q))
+                #this is to calculate remianing. 
+                num -= q*den
+            print (result)
+        return "".join(result)
