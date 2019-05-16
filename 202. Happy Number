@@ -1,0 +1,19 @@
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        my_set = set ()
+        sum = 0
+        while (n not in my_set):
+            my_set.add(n)
+            n = self.getSum(n)
+            if n == 1:
+                return True
+        return False
+        
+        
+    def getSum(self, n):
+        
+        res = 0
+        while (n > 0):
+            res += (n%10)**2
+            n //= 10        
+        return res
