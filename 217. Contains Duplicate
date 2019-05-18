@@ -1,0 +1,15 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        d = {}
+        if not nums:
+            return False
+        for num in nums:
+            if num in d:
+                return True
+                d[num]+=1
+                #print ("num:",d[num])
+            else:
+                d[num] = 1
+        print (d.items())
+        return False
+        
