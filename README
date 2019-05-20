@@ -1,33 +1,34 @@
-1. 26.removeDuplicates
-2. 27.removeElement
-3. 283.moveZeroes
-4. 349.intersection
-5. 350. intersect II
-6. 167.twoSum
-7. 242 isAnagram
-8. 205. isIsomorphic
-9. 189. Rotate Array
-10.557.reverseWords
-11.796.rotateString
-12. 605. canPlaceFlowers - Understand More 
-13.748.shortestCompletingWord
-14.153. Find Minimum in Rotated Sorted Array
-15.257. Binary Tree Paths
-16.isValidBST
-17.258. Add Digits
-18.263. Ugly Number
-19.236. LowestCommonAncestor
-20.226.invertTree
-21.929. Unique Email Addresses
-22.3.lengthOfLongestSubstring
-24.9.isPalindrome
-25.7.reverse
-26.166.fractionToDecimal
-27.171. Excel Sheet Column Number
-28.168. Excel Sheet Column Title
-29.172. Factorial Trailing Zeroes
-30.202. Happy Number
-31.217. Contains Duplicate
-32.191. Number of 1 Bits
-33.338. Counting Bits
-34.190. Reverse Bits
+ 26.removeDuplicates
+ 27.removeElement
+ 283.moveZeroes
+ 349.intersection
+ 350. intersect II
+ 167.twoSum
+ 242 isAnagram
+ 205. isIsomorphic
+ 189. Rotate Array
+ 557.reverseWords
+ 796.rotateString
+ 605. canPlaceFlowers - Understand More 
+748.shortestCompletingWord
+153. Find Minimum in Rotated Sorted Array
+257. Binary Tree Paths
+isValidBST
+258. Add Digits
+263. Ugly Number
+236. LowestCommonAncestor
+226.invertTree
+929. Unique Email Addresses
+3.lengthOfLongestSubstring
+9.isPalindrome
+7.reverse
+166.fractionToDecimal
+171. Excel Sheet Column Number
+168. Excel Sheet Column Title
+172. Factorial Trailing Zeroes
+202. Happy Number
+217. Contains Duplicate
+191. Number of 1 Bits
+338. Counting Bits
+190. Reverse Bits
+33. Search in Rotated Sorted Array
